@@ -1,8 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
+import React, {Component} from 'react';
 
-function App() {
-  return (
+class App extends Component {
+
+  constructor(props){
+    super(props)
+    this.state = {year:2010}
+  }
+
+  handleChange = (e) =>{
+    const value = e.target.value;
+    if(!isNaN(value)){
+      this.setState({year:value});
+    }
+  }
+
+  render (){
+
+    const {year} = this.state;
+
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -19,7 +36,7 @@ function App() {
         </a>
       </header>
     </div>
-  );
+  }
 }
 
 export default App;
