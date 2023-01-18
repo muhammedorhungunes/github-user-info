@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class SooView extends Component {
+export class SooView extends Component {
   render() {
     const { visible } = this.props.visibilityMode;
     const msg = visible ? "TRUE" : "FALSE";
@@ -23,3 +23,5 @@ class SooView extends Component {
     );
   }
 }
+
+export default SooView;

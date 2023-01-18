@@ -9,4 +9,4 @@ const mapDispatchToProps = dispatch => ({
 
 })
 
-export default GitUserInfoViewContainer = connect(mapStateToProps,mapDispatchToProps)(GitUserInfoView)
+export const GitUserInfoViewContainer = connect(mapStateToProps,mapDispatchToProps)(GitUserInfoView)

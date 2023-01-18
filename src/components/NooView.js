@@ -1,7 +1,7 @@
-import React, { Components } from "react";
-import {SooViewContainer} from "../containers/SooViewContainer";
+import React, { Component } from "react";
+import { SooViewContainer } from "../containers/SooViewContainer";
 
-class NoView extends Components {
+export class NoView extends Component {
   render() {
     return (
       <div
@@ -21,4 +21,5 @@ class NoView extends Components {
     );
   }
 }
+
 export default NoView;

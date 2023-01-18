@@ -9,4 +9,4 @@ const mapDispatchToProps = dispatch => ({
 
 });
 
-export default DooViewContainer = connect(mapStateToProps,mapDispatchToProps)(DooView)
+export const DooViewContainer = connect(mapStateToProps,mapDispatchToProps)(DooView)

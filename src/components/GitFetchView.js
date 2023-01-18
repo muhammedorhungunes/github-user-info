@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 
-class GitFetchView extends Component{
+export class GitFetchView extends Component{
     constructor(props){
         super(props)
         this.state = {gitName: 'muhammedorhungunes'}

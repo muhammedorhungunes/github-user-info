@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 
-class FooView extends Component{
+export class FooView extends Component{
     constructor(props){
         super(props)
         this.state = {age:30}

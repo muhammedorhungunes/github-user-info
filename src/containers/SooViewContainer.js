@@ -13,4 +13,4 @@ const mapDispatchToProps = dispatch => (
     }
 )
 
-export default SooViewContainer = connect(mapStateToProps,mapDispatchToProps)(SooView)
+export const SooViewContainer = connect(mapStateToProps,mapDispatchToProps)(SooView)

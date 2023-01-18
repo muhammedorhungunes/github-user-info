@@ -8,4 +8,4 @@ const mapDispatchToProps = dispatch => ({
     getGitUser: (gitName) => dispatch(getGitUser(gitName))
 })
 
-export default GitFetchViewContainer = connect(mapStateToProps,mapDispatchToProps)(GitFetchView)
+export const GitFetchViewContainer = connect(mapStateToProps,mapDispatchToProps)(GitFetchView)

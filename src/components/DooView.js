@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 
-class DooView extends Component{
+export class DooView extends Component{
     constructor(props){
         super(props)
     }

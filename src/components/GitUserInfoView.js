@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import ReactJson from "react";
+import ReactJson from "react-json-view";
 
 class GitUserInfoView extends Component {
   constructor(props) {
@@ -10,7 +10,7 @@ class GitUserInfoView extends Component {
     const { gitUser, fetching } = this.props.gitUser;
 
     if (fetching) {
-      return <div>Yükleniyor...</div>;
+      return <div>YUKLENIYOR.....</div>;
     } else {
       return (
         <div
@@ -28,4 +28,5 @@ class GitUserInfoView extends Component {
     }
   }
 }
+
 export default GitUserInfoView;

@@ -1,4 +1,4 @@
-import {GIT_USER} from "../constant/GitUser"
+import {GIT_USER} from "../constants/GitUser"
 import axios from "axios"
 
 export function getGitUser(gitName) {

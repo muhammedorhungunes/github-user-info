@@ -1,41 +1,37 @@
-import logo from './logo.svg';
+import "./App.css";
+import React, { Component } from "react";
 import './App.css';
-import React, {Component} from 'react';
+import {FooViewContainer} from '../src/containers/FooViewContainer'
+import {DooViewContainer} from '../src/containers/DooViewContainer'
+import NooView from '../src/components/NooView'
+import {GitFetchViewContainer} from '../src/containers/GitFetchViewContainer'
+import {GitUserInfoViewContainer} from '../src/containers/GitUserInfoViewContainer'
 
 class App extends Component {
-
-  constructor(props){
-    super(props)
-    this.state = {year:2010}
+  constructor(props) {
+    super(props);
+    this.state = { year: 2010 };
   }
 
-  handleChange = (e) =>{
+  handleChange = (e) => {
     const value = e.target.value;
-    if(!isNaN(value)){
-      this.setState({year:value});
+    if (!isNaN(value)) {
+      this.setState({ year: value });
     }
-  }
+  };
 
-  render (){
-
-    const {year} = this.state;
-
+  render() {
+    const { year } = this.state;
+    return(
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <FooViewContainer year={year} />
+      <DooViewContainer handleChange={this.handleChange} year={year} />
+      <NooView />
+
+      <GitFetchViewContainer />
+      <GitUserInfoViewContainer />
     </div>
+    )
   }
 }
 
